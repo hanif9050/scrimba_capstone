@@ -9,7 +9,7 @@ function Photos(){
     const {allPhotos}=useContext(Context)
     // const newPhotos=allPhotos.slice(0,3)
     const imageUrl=allPhotos.map((img,i)=>(<Image key={img.id} img={img} className={getClass(i)}/>))
-    console.log(allPhotos)
+   
     return (
         <main className="photos">
            
